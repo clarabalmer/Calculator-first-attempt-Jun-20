@@ -1,0 +1,48 @@
+<!--This code (build with guidance from Bara Kathawa) is not a working calculator yet, but the styling is in a good place, and most of the buttons do something. In this version, operators and the equals button pop up an alert showing the contents of the array holding the info from buttons pushed. Finished js code is below line 70, above is mostly notes, plans/to do, and code in progress (array logic replaced with object logic in second version).-->
+
+<html>
+    <head>
+        <title>Clara's Calculator</title>
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div>
+            <div class="answer">0</div>
+        </div>
+        <div>
+            <div class="top" onclick="clear()">AC</div>
+            <div class="top" onclick="posneg()">&#177;</div>
+            <div class="top" onclick="percent()">%</div>
+            <div class="side" onclick="operate(divide)">&#247;</div>
+        </div>
+
+        <div>
+            <div onclick="number(7)">7</div>
+            <div onclick="number(8)">8</div>
+            <div onclick="number(9)">9</div>
+            <div class="side" onclick="operate(multiply)">&#215;</div>
+        </div>
+
+        <div>
+            <div onclick="number(4)">4</div>
+            <div onclick="number(5)">5</div>
+            <div onclick="number(6)">6</div>
+            <div class="side" onclick="operate(minus)">-</div>
+        </div>
+
+        <div>
+            <div onclick="number(1)">1</div>
+            <div onclick="number(2)">2</div>
+            <div onclick="number(3)">3</div>
+            <div class="side" onclick="operate(plus)">+</div>
+        </div>
+
+        <div>
+            <div class="bigmiddle" onclick="number(0)">0</div>
+            <div onclick="point()">.</div>
+            <div class="side" onclick="equals()">=</div>
+        </div>
+    </body>
+</html>
